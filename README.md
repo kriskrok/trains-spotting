@@ -1,14 +1,24 @@
 # trains-spotting coding exercise :cyclone:
-## [in Heroku](https://trains-spotting.herokuapp.com/)
+### Sovellus [Heroku](https://trains-spotting.herokuapp.com/) -palvelussa
 ***
 
-## Sivusto junien seurantaan
-Käyttäjät voivat luoda sivustolle oman käyttäjätilin tai vaihtoehtoisesti kokeilla palvelua testitunnuksella
+### Sivusto junien seurantaan
+Käyttäjät voivat luoda sivustolle oman käyttäjätilin tai vaihtoehtoisesti kokeilla palvelua testitunnuksella.
 - username: ```Maija```
 - password: ```sateenvarjokala```
 
-Kirjautuneilla käyttäjillä on mahdollisuus tarkastella omia käyttäjätietojaan sekä junien sijaintitietoja jotka päivittyvät 10 sekunnin välein.
+Kirjautuneilla käyttäjillä on mahdollisuus tarkastella omia käyttäjätietojaan sekä junien sijaintitietoja, jotka päivittyvät 10 sekunnin välein.
 
-<p align="center">
-  <img src="http://www.thechristmasshop.co.uk/WebRoot/BT/Shops/BT4873/5510/1DAA/2F8B/66DF/A3BA/0A0C/05EE/762C/A0512013.jpg">
-</p>
+Sovellus koostuu [React](https://reactjs.org/) -kirjastoa hyödyntävästä frontendistä, joka tukeutuu [Node.js](https://nodejs.org/):llä toteutettuun backendiin. Kunkin lähdekoodi majailee nimensä mukaisessa hakemistossa.
+
+#### Hieman testeistä
+Sekä Frontendin että Backendin yksikkötestaukseen on käytetty [Jest](https://jestjs.io/) -testikirjastoa.
+
+Backendin integraatiotestausta tehdään hyödyntämällä [supertest](https://github.com/visionmedia/supertest) -kirjastoa.
+
+Sovelluksen API rajapintaa testataan hyödyntäen [supertest](https://github.com/visionmedia/supertest) -kirjastoa.
+
+Koko järjestelmän e2e-testejä suoritetaan [Cypress](https://www.cypress.io/) -testikirjaston siipien alla.
+
+___
+**_Happy trainsspotting!_**

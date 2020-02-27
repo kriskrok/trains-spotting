@@ -1,0 +1,13 @@
+# dependencies
+**/node_modules
+
+# testing
+**/coverage
+**/cypress/videos
+
+# production
+**/build
+
+**/.env
+
+**/npm-debug.log*

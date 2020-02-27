@@ -16,7 +16,7 @@ Sekä Frontendin että Backendin yksikkötestaukseen on käytetty [Jest](https:/
 
 Backendin integraatiotestausta tehdään hyödyntämällä [supertest](https://github.com/visionmedia/supertest) -kirjastoa.
 
-Sovelluksen API rajapintaa testataan hyödyntäen [supertest](https://github.com/visionmedia/supertest) -kirjastoa.
+Myös sovelluksen API rajapintaa testataan hyödyntäen supertest -kirjastoa.
 
 Koko järjestelmän e2e-testejä suoritetaan [Cypress](https://www.cypress.io/) -testikirjaston siipien alla.
 

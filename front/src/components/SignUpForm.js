@@ -6,17 +6,17 @@ const SignUpForm = ({ createUser }) => {
 
   const addUser = async (event) => {
     event.preventDefault()
-    const success = await createUser({...credentials, password })
+    const success = await createUser({ ...credentials, password })
 
     if (success) {
       setCredentials({ username: '', name: '', email: '' })
       setPassword('')
     }
-    
+
   }
 
   return (
-    <form style={{ margin: 'auto', maxWidth: '50%'}} onSubmit={addUser}>
+    <form style={{ margin: 'auto', maxWidth: '50%' }} onSubmit={addUser}>
       <div className='form-group row'>
         <label htmlFor='username' className='col-sm-3 col-form-label'>
           Username
@@ -35,7 +35,7 @@ const SignUpForm = ({ createUser }) => {
         <div className='col-sm-9'>
           <input type='text' className='form-control' value={credentials.name} id='name' required
             onChange={({ target }) => (setCredentials({ ...credentials, name: target.value }))} />
-            <small id='nameHelp' className='form-text text-muted'>minimum length, 3</small>
+          <small id='nameHelp' className='form-text text-muted'>minimum length, 3</small>
         </div>
       </div>
 
@@ -46,7 +46,7 @@ const SignUpForm = ({ createUser }) => {
         <div className='col-sm-9'>
           <input type='text' className='form-control' value={credentials.email} id='email' required
             onChange={({ target }) => (setCredentials({ ...credentials, email: target.value }))} />
-            <small id='emailHelp' className='form-text text-muted'>kindly provide a 'valid' address</small>
+          <small id='emailHelp' className='form-text text-muted'>kindly provide a 'valid' address</small>
         </div>
       </div>
 

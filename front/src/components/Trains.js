@@ -4,7 +4,7 @@ import trainService from '../services/trains'
 const Trains = () => {
   const [data, setData] = useState([])
 
- useEffect(() => {
+  useEffect(() => {
     trainService.getAll().then(result => {
       setData( sortTrainsByName(result) )
     })
@@ -16,8 +16,8 @@ const Trains = () => {
       trainService.getAll().then(result => {
         setData( sortTrainsByName(result) )
       })
-    }, 10000);
-    return () => clearInterval(interval);
+    }, 10000)
+    return () => clearInterval(interval)
   }, [])
 
   const sortTrainsByName = id => id.sort( (a,b) => a.name.localeCompare(b.name) )
@@ -36,7 +36,7 @@ const Trains = () => {
       )
     })
   )
-  
+
   return (
     <div className='container'>
       <table className='table table-hover'>
@@ -51,7 +51,7 @@ const Trains = () => {
           </tr>
         </thead>
         <tbody>
-            {renderData()}
+          {renderData()}
         </tbody>
       </table>
     </div>

@@ -18,7 +18,8 @@
     "eject": "react-scripts eject",
     "cypress:open": "cypress open",
     "test:e2e": "cypress run",
-    "eslint": "eslint ."
+    "eslint": "eslint .",
+    "eslint:fix": "eslint --fix ."
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,6 +41,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
     "cypress": "^4.0.2",
+    "eslint-plugin-cypress": "^2.11.3",
     "eslint-plugin-jest": "^23.8.0"
   }
 }

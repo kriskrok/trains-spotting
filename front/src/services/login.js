@@ -6,4 +6,16 @@ const login = async credentials => {
   return response.data
 }
 
-export default { login }
+const oauthLogin = async  () => {
+  const response = await axios.get(`${baseUrl}/oauth`)
+
+  return response.data.url
+}
+
+const logout = async () => {
+  const response = await  axios.get('/api/logout')
+
+  return response.data.logoutURI
+}
+
+export default { login, logout, oauthLogin }
